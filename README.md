@@ -3,20 +3,28 @@
 
 Human Activity Recognition database built from the recordings of 30 subjects performing activities of daily living (ADL) while carrying a waist-mounted smartphone with embedded inertial sensors.
 
-A full description is available at:
+Data is available at:
 
 http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones
 
+## Data set information
+
+- Sample size = 30 individuals
+- Each indvidiua performs six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) 
+- An accelerometer and gyroscop captures 3-axial linear acceleration and 3-axial angular velocity 
+- Dataset has been randomly partitioned (70% = training data and 30% = test data). 
+
+For each record in the dataset it is provided: 
+- Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration. 
+- Triaxial Angular velocity from the gyroscope. 
+- A 561-feature vector with time and frequency domain variables. 
+- Its activity label. 
+- An identifier of the subject who carried out the experiment.
+
 ## Files
 
-`CodeBook.md` -- describes the variables, the data, and any transformations or work performed to clean up the data
+`CodeBook.md` - describes the variables, the data, and any transformations or work performed to clean up the data
 
-`run_analysis.R` -- script for performing the analysis. Does the following:
+`run_analysis.R` - script for performing the analysis. Does the following:
 
-1. Merges the training and the test sets to create one data set.
-2. Extracts only the measurements on the mean and standard deviation for each measurement.
-3. Uses descriptive activity names to name the activities in the data set
-4. Appropriately labels the data set with descriptive variable names.
-5. From the data set in step 4, creates a second, independent tidy data set with the average of each variable for each activity and each subject.
-
-`tidy.txt` -- The output of the 5th step
+`tidy.txt` - The output of `run_analysis.R`
