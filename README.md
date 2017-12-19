@@ -23,8 +23,8 @@ For each record in the dataset it is provided:
 
 ## Files
 
-`CodeBook.md` - describes the variables, the data, and any transformations or work performed to clean up the data
+`CodeBook.md` - Describes the variables, the data, and transformations and work performed to clean up the data
 
-`run_analysis.R` - script for performing the analysis. Does the following:
+`run_analysis.R` - Script for performing the analysis
 
-`tidy.txt` - The output of `run_analysis.R`
+`tidy.txt` - Output of `run_analysis.R`
